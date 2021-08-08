@@ -1,0 +1,40 @@
+GET http://localhost:8080/api/plane/owner/8
+Accept: application/json
+
+###
+POST http://localhost:8080/api/plane
+Content-Type: application/json
+
+{
+  "type": "rénszarvi",
+  "manufacturer": 100,
+  "hornNumber": 17,
+  "alma": "körte",
+  "ownerID": 1
+}
+
+###
+
+PUT http://localhost:8080/api/plane
+Content-Type: application/json
+
+{
+  "id": 5,
+  "type": "Fecske",
+  "manufacturer": 14,
+  "hornNumber": 17,
+  "alma": "körte",
+  "ownerID": 1
+}
+
+###
+GET http://localhost:8080/api/plane
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/plane/5
+Accept: application/json
+
+###
+

@@ -1,0 +1,39 @@
+GET http://localhost:8080/api/car/owner/8
+Accept: application/json
+
+###
+POST http://localhost:8080/api/car
+Content-Type: application/json
+
+{
+  "type": "audi",
+  "manufacturer": 100,
+  "hornNumber": 17432,
+  "alma": "asdasd",
+  "ownerID": 1
+}
+
+###
+
+PUT http://localhost:8080/api/car
+Content-Type: application/json
+
+{
+  "id": 8,
+  "manufacturer": "asdasd",
+  "type": "audi",
+  "alma": "körte",
+  "ownerID": 2
+}
+
+###
+GET http://localhost:8080/api/car
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/car/5
+Accept: application/json
+
+###
+

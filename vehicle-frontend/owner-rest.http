@@ -1,0 +1,38 @@
+GET http://localhost:8080/api/owner/data/4
+Accept: application/json
+
+###
+POST http://localhost:8080/api/owner
+Content-Type: application/json
+
+{
+  "firstName": "teszt",
+  "lastName": "szarvas",
+  "hornNumber": 17,
+  "alma": "körte",
+  "ownerID": 1
+}
+
+###
+
+PUT http://localhost:8080/api/owner
+Content-Type: application/json
+
+{
+  "id": 11,
+  "firstName": "Működj",
+  "lastName": "Teszt",
+  "ownerID": 1
+}
+
+###
+GET http://localhost:8080/api/owner
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/api/owner/10
+Accept: application/json
+
+###
+
